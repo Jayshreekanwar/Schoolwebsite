@@ -1,0 +1,189 @@
+<!DOCTYPE html><html lang="hi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>राजकीय उच्च माध्यमिक विद्यालय तेहनदेसर</title>
+
+    <style>
+
+        body {
+
+            margin: 0;
+
+            font-family: 'Arial', sans-serif;
+
+        }
+
+        header {
+
+            background-color: #007BFF;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 20px;
+
+            font-size: 2em;
+
+            font-weight: bold;
+
+        }
+
+        #contact {
+
+            text-align: center;
+
+            background-color: #f2f2f2;
+
+            padding: 10px;
+
+            font-size: 1em;
+
+        }
+
+        nav {
+
+            background-color: #333;
+
+            overflow: hidden;
+
+        }
+
+        nav a {
+
+            float: left;
+
+            display: block;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 14px 16px;
+
+            text-decoration: none;
+
+        }
+
+        nav a:hover {
+
+            background-color: #575757;
+
+        }
+
+        .content {
+
+            padding: 20px;
+
+        }
+
+        .tab {
+
+            display: none;
+
+        }
+
+        .active {
+
+            display: block;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        राजकीय उच्च माध्यमिक विद्यालय तेहनदेसर
+
+    </header>
+
+    <div id="contact">
+
+        फ़ोन नंबर: 9660296856
+
+    </div><nav>
+
+    <a href="#" onclick="showTab('about')">About Us</a>
+
+    <a href="#" onclick="showTab('students')">Student</a>
+
+    <a href="#" onclick="showTab('teachers')">Teacher</a>
+
+    <a href="#" onclick="showTab('gallery')">Gallery</a>
+
+</nav>
+
+<div class="content">
+
+    <div id="about" class="tab active">
+
+        <h2>विद्यालय का विवरण</h2>
+
+        <p>
+
+            राजकीय उच्च माध्यमिक विद्यालय तहिन्दसर एक प्रतिष्ठित शैक्षणिक संस्थान है जो विद्यार्थियों को गुणवत्तापूर्ण शिक्षा प्रदान करने के लिए समर्पित है। 
+
+            यहाँ विद्यार्थियों के सर्वांगीण विकास हेतु आधुनिक शिक्षण पद्धतियों, अनुभवी शिक्षकों एवं उत्कृष्ट अधोसंरचना की व्यवस्था है। 
+
+            विद्यालय का उद्देश्य विद्यार्थियों को न केवल शैक्षणिक रूप से बल्कि नैतिक और सामाजिक रूप से भी सशक्त बनाना है।
+
+        </p>
+
+    </div>
+
+    <div id="students" class="tab">
+
+        <h2>छात्र जानकारी</h2>
+
+        <p> jay shree kanwar</p>
+
+    </div>
+
+    <div id="teachers" class="tab">
+
+        <h2>Teacher</h2>
+
+        <p> yagay dutt।</p>
+
+    </div>
+
+    <div id="gallery" class="tab">
+
+        <h2>गेलरी</h2>
+
+        <p> No </p>
+
+    </div>
+
+</div>
+
+<script>
+
+    function showTab(tabId) {
+
+        var tabs = document.getElementsByClassName('tab');
+
+        for (var i = 0; i < tabs.length; i++) {
+
+            tabs[i].classList.remove('active');
+
+        }
+
+        document.getElementById(tabId).classList.add('active');
+
+    }
+
+</script>
+
+</body>
+
+</html>
